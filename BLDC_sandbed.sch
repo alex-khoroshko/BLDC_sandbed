@@ -25,13 +25,13 @@ F 3 "~" H 1000 3300 50  0001 C CNN
 	1    1000 3300
 	1    0    0    -1  
 $EndComp
-Text GLabel 1200 3100 2    50   Input ~ 6
+Text GLabel 1200 3100 2    50   Input ~ 10
 SD
-Text GLabel 1200 3200 2    50   Input ~ 6
+Text GLabel 1200 3200 2    50   Input ~ 10
 IN1
-Text GLabel 1200 3300 2    50   Input ~ 6
+Text GLabel 1200 3300 2    50   Input ~ 10
 IN2
-Text GLabel 1200 3400 2    50   Input ~ 6
+Text GLabel 1200 3400 2    50   Input ~ 10
 IN3
 $Comp
 L power:GND #PWR0101
@@ -53,7 +53,7 @@ L Regulator_Linear:LM3480-3.3 U6
 U 1 1 5D37110A
 P 10150 1050
 F 0 "U6" H 10150 1292 50  0000 C CNN
-F 1 "LM3480-3.3" H 10150 1201 50  0000 C CNN
+F 1 "LM3480IM3-3.3" H 10150 1201 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 10150 1275 50  0001 C CIN
 F 3 "http://www.ti.com/lit/ds/symlink/lm3480.pdf" H 10150 1050 50  0001 C CNN
 	1    10150 1050
@@ -152,9 +152,9 @@ F 3 "" H 10150 1350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4450 1700 4600 1700
-Text GLabel 4600 1700 2    50   Input ~ 6
+Text GLabel 4600 1700 2    50   Input ~ 10
 OUT1
-Text GLabel 6600 2350 2    50   Input ~ 6
+Text GLabel 6600 2350 2    50   Input ~ 10
 CUR1
 $Comp
 L power:GND #PWR0107
@@ -212,9 +212,9 @@ F 3 "" H 2350 750 50  0001 C CNN
 	1    2350 750 
 	1    0    0    -1  
 $EndComp
-Text GLabel 2600 1500 0    50   Input ~ 6
+Text GLabel 2600 1500 0    50   Input ~ 10
 IN1
-Text GLabel 2600 1600 0    50   Input ~ 6
+Text GLabel 2600 1600 0    50   Input ~ 10
 SD
 Wire Wire Line
 	3750 1800 3200 1800
@@ -476,9 +476,9 @@ Wire Wire Line
 Connection ~ 6450 2350
 Wire Wire Line
 	4450 4350 4600 4350
-Text GLabel 4600 4350 2    50   Input ~ 6
+Text GLabel 4600 4350 2    50   Input ~ 10
 OUT2
-Text GLabel 6600 5000 2    50   Input ~ 6
+Text GLabel 6600 5000 2    50   Input ~ 10
 CUR2
 $Comp
 L power:+24V #PWR0119
@@ -505,7 +505,7 @@ F 3 "" H 2350 3400 50  0001 C CNN
 $EndComp
 Text GLabel 2600 4150 0    50   Input ~ 0
 IN2
-Text GLabel 2600 4250 0    50   Input ~ 6
+Text GLabel 2600 4250 0    50   Input ~ 10
 SD
 Wire Wire Line
 	3750 4450 3200 4450
@@ -723,7 +723,7 @@ Wire Wire Line
 Connection ~ 6450 5000
 Wire Wire Line
 	4450 7000 4600 7000
-Text GLabel 4600 7000 2    50   Input ~ 6
+Text GLabel 4600 7000 2    50   Input ~ 10
 OUT3
 $Comp
 L power:+24V #PWR0124
@@ -750,7 +750,7 @@ F 3 "" H 2350 6050 50  0001 C CNN
 $EndComp
 Text GLabel 2600 6800 0    50   Input ~ 0
 IN3
-Text GLabel 2600 6900 0    50   Input ~ 6
+Text GLabel 2600 6900 0    50   Input ~ 10
 SD
 Wire Wire Line
 	3750 7100 3200 7100
@@ -924,7 +924,7 @@ L Regulator_Linear:NCP1117-12_SOT223 U5
 U 1 1 5D3BCB6B
 P 8150 1050
 F 0 "U5" H 8150 1292 50  0000 C CNN
-F 1 "NCP1117-12_SOT223" H 8150 1201 50  0000 C CNN
+F 1 "NCP1117ST12T3G" H 8150 1201 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 8150 1250 50  0001 C CNN
 F 3 "http://www.onsemi.com/pub_link/Collateral/NCP1117-D.PDF" H 8250 800 50  0001 C CNN
 	1    8150 1050
@@ -1018,9 +1018,9 @@ F 3 "" H 7350 1050 50  0001 C CNN
 	1    7350 1050
 	0    -1   -1   0   
 $EndComp
-Text GLabel 1100 4300 2    50   Input ~ 6
+Text GLabel 1100 4300 2    50   Input ~ 10
 CUR1
-Text GLabel 1100 4400 2    50   Input ~ 6
+Text GLabel 1100 4400 2    50   Input ~ 10
 CUR2
 $Comp
 L Transistor_FET:IRF540N Q2
@@ -1232,4 +1232,276 @@ Wire Wire Line
 	5450 1700 5450 2250
 Connection ~ 5450 1350
 Connection ~ 5450 4000
+$Comp
+L Device:C C12
+U 1 1 5D367BF8
+P 8350 2600
+F 0 "C12" H 8465 2646 50  0000 L CNN
+F 1 "10мк" H 8465 2555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 8388 2450 50  0001 C CNN
+F 3 "~" H 8350 2600 50  0001 C CNN
+F 4 "50В" H 8550 2450 50  0000 C CNN "Voltage"
+	1    8350 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0114
+U 1 1 5D368739
+P 8350 2750
+F 0 "#PWR0114" H 8350 2500 50  0001 C CNN
+F 1 "GND" H 8355 2577 50  0000 C CNN
+F 2 "" H 8350 2750 50  0001 C CNN
+F 3 "" H 8350 2750 50  0001 C CNN
+	1    8350 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0117
+U 1 1 5D368BA9
+P 8850 2750
+F 0 "#PWR0117" H 8850 2500 50  0001 C CNN
+F 1 "GND" H 8855 2577 50  0000 C CNN
+F 2 "" H 8850 2750 50  0001 C CNN
+F 3 "" H 8850 2750 50  0001 C CNN
+	1    8850 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+24V #PWR0118
+U 1 1 5D368DF1
+P 8350 2450
+F 0 "#PWR0118" H 8350 2300 50  0001 C CNN
+F 1 "+24V" H 8365 2623 50  0000 C CNN
+F 2 "" H 8350 2450 50  0001 C CNN
+F 3 "" H 8350 2450 50  0001 C CNN
+	1    8350 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+24V #PWR0139
+U 1 1 5D3692BF
+P 8850 2450
+F 0 "#PWR0139" H 8850 2300 50  0001 C CNN
+F 1 "+24V" H 8865 2623 50  0000 C CNN
+F 2 "" H 8850 2450 50  0001 C CNN
+F 3 "" H 8850 2450 50  0001 C CNN
+	1    8850 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C13
+U 1 1 5D3697D9
+P 8850 2600
+F 0 "C13" H 8965 2646 50  0000 L CNN
+F 1 "10мк" H 8965 2555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 8888 2450 50  0001 C CNN
+F 3 "~" H 8850 2600 50  0001 C CNN
+F 4 "50В" H 9050 2450 50  0000 C CNN "Voltage"
+	1    8850 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0140
+U 1 1 5D36B2F7
+P 9300 2750
+F 0 "#PWR0140" H 9300 2500 50  0001 C CNN
+F 1 "GND" H 9305 2577 50  0000 C CNN
+F 2 "" H 9300 2750 50  0001 C CNN
+F 3 "" H 9300 2750 50  0001 C CNN
+	1    9300 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+24V #PWR0141
+U 1 1 5D36B2FD
+P 9300 2450
+F 0 "#PWR0141" H 9300 2300 50  0001 C CNN
+F 1 "+24V" H 9315 2623 50  0000 C CNN
+F 2 "" H 9300 2450 50  0001 C CNN
+F 3 "" H 9300 2450 50  0001 C CNN
+	1    9300 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C14
+U 1 1 5D36EEAC
+P 9300 2600
+F 0 "C14" H 9418 2691 50  0000 L CNN
+F 1 "100мк" H 9418 2600 50  0000 L CNN
+F 2 "Capacitor_SMD:C_Elec_8x10.2" H 9338 2450 50  0001 C CNN
+F 3 "~" H 9300 2600 50  0001 C CNN
+F 4 "50В" H 9418 2509 50  0000 L CNN "Voltage"
+	1    9300 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0142
+U 1 1 5D370A1F
+P 9800 2750
+F 0 "#PWR0142" H 9800 2500 50  0001 C CNN
+F 1 "GND" H 9805 2577 50  0000 C CNN
+F 2 "" H 9800 2750 50  0001 C CNN
+F 3 "" H 9800 2750 50  0001 C CNN
+	1    9800 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+24V #PWR0143
+U 1 1 5D370A25
+P 9800 2450
+F 0 "#PWR0143" H 9800 2300 50  0001 C CNN
+F 1 "+24V" H 9815 2623 50  0000 C CNN
+F 2 "" H 9800 2450 50  0001 C CNN
+F 3 "" H 9800 2450 50  0001 C CNN
+	1    9800 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C15
+U 1 1 5D378BAB
+P 9800 2600
+F 0 "C15" H 9918 2691 50  0000 L CNN
+F 1 "100мк" H 9918 2600 50  0000 L CNN
+F 2 "Capacitor_SMD:C_Elec_8x10.2" H 9838 2450 50  0001 C CNN
+F 3 "~" H 9800 2600 50  0001 C CNN
+F 4 "50В" H 9918 2509 50  0000 L CNN "Voltage"
+	1    9800 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D3895BC
+P 10250 2750
+F 0 "#PWR?" H 10250 2500 50  0001 C CNN
+F 1 "GND" H 10255 2577 50  0000 C CNN
+F 2 "" H 10250 2750 50  0001 C CNN
+F 3 "" H 10250 2750 50  0001 C CNN
+	1    10250 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+24V #PWR?
+U 1 1 5D3895C2
+P 10250 2450
+F 0 "#PWR?" H 10250 2300 50  0001 C CNN
+F 1 "+24V" H 10265 2623 50  0000 C CNN
+F 2 "" H 10250 2450 50  0001 C CNN
+F 3 "" H 10250 2450 50  0001 C CNN
+	1    10250 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 5D3895C9
+P 10250 2600
+F 0 "C?" H 10368 2691 50  0000 L CNN
+F 1 "100мк" H 10368 2600 50  0000 L CNN
+F 2 "Capacitor_SMD:C_Elec_8x10.2" H 10288 2450 50  0001 C CNN
+F 3 "~" H 10250 2600 50  0001 C CNN
+F 4 "50В" H 10368 2509 50  0000 L CNN "Voltage"
+	1    10250 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D3895CF
+P 10750 2750
+F 0 "#PWR?" H 10750 2500 50  0001 C CNN
+F 1 "GND" H 10755 2577 50  0000 C CNN
+F 2 "" H 10750 2750 50  0001 C CNN
+F 3 "" H 10750 2750 50  0001 C CNN
+	1    10750 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+24V #PWR?
+U 1 1 5D3895D5
+P 10750 2450
+F 0 "#PWR?" H 10750 2300 50  0001 C CNN
+F 1 "+24V" H 10765 2623 50  0000 C CNN
+F 2 "" H 10750 2450 50  0001 C CNN
+F 3 "" H 10750 2450 50  0001 C CNN
+	1    10750 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 5D3895DC
+P 10750 2600
+F 0 "C?" H 10868 2691 50  0000 L CNN
+F 1 "100мк" H 10868 2600 50  0000 L CNN
+F 2 "Capacitor_SMD:C_Elec_8x10.2" H 10788 2450 50  0001 C CNN
+F 3 "~" H 10750 2600 50  0001 C CNN
+F 4 "50В" H 10868 2509 50  0000 L CNN "Voltage"
+	1    10750 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5D390527
+P 7400 2600
+F 0 "C?" H 7515 2646 50  0000 L CNN
+F 1 "10мк" H 7515 2555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 7438 2450 50  0001 C CNN
+F 3 "~" H 7400 2600 50  0001 C CNN
+F 4 "50В" H 7600 2450 50  0000 C CNN "Voltage"
+	1    7400 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D39052D
+P 7400 2750
+F 0 "#PWR?" H 7400 2500 50  0001 C CNN
+F 1 "GND" H 7405 2577 50  0000 C CNN
+F 2 "" H 7400 2750 50  0001 C CNN
+F 3 "" H 7400 2750 50  0001 C CNN
+	1    7400 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D390533
+P 7900 2750
+F 0 "#PWR?" H 7900 2500 50  0001 C CNN
+F 1 "GND" H 7905 2577 50  0000 C CNN
+F 2 "" H 7900 2750 50  0001 C CNN
+F 3 "" H 7900 2750 50  0001 C CNN
+	1    7900 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+24V #PWR?
+U 1 1 5D390539
+P 7400 2450
+F 0 "#PWR?" H 7400 2300 50  0001 C CNN
+F 1 "+24V" H 7415 2623 50  0000 C CNN
+F 2 "" H 7400 2450 50  0001 C CNN
+F 3 "" H 7400 2450 50  0001 C CNN
+	1    7400 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+24V #PWR?
+U 1 1 5D39053F
+P 7900 2450
+F 0 "#PWR?" H 7900 2300 50  0001 C CNN
+F 1 "+24V" H 7915 2623 50  0000 C CNN
+F 2 "" H 7900 2450 50  0001 C CNN
+F 3 "" H 7900 2450 50  0001 C CNN
+	1    7900 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5D390546
+P 7900 2600
+F 0 "C?" H 8015 2646 50  0000 L CNN
+F 1 "10мк" H 8015 2555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 7938 2450 50  0001 C CNN
+F 3 "~" H 7900 2600 50  0001 C CNN
+F 4 "50В" H 8100 2450 50  0000 C CNN "Voltage"
+	1    7900 2600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
